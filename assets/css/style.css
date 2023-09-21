@@ -2641,3 +2641,34 @@ section {
     height: auto !important;
   }
 }
+
+.flag-flex {
+  flex-direction: row;
+}
+
+@media (max-width: 768px) {
+  .flag-flex {
+    flex-direction: column;
+  }
+}
+
+.pm-hover:hover {
+  color: #1381bd;
+}
+
+.ser-det {
+  flex-direction: row;
+}
+
+.box-mar {
+  margin-right: 20px !important;
+}
+
+@media (max-width: 576px) {
+  .ser-det {
+    flex-direction: column;
+  }
+  .box-mar {
+    margin-right: 0px !important;
+  }
+}
