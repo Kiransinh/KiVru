@@ -78,9 +78,9 @@ h6,
   background: #1e4356;
 }
 
-#header.header-transparent {
+/* #header.header-transparent {
   background: none;
-}
+} */
 
 #header.header-scrolled {
   background: rgba(30, 67, 86, 0.8);
@@ -2664,11 +2664,29 @@ section {
   margin-right: 20px !important;
 }
 
-@media (max-width: 576px) {
+@media (max-width: 768px) {
   .ser-det {
     flex-direction: column;
+    margin-right: 50px !important;
   }
   .box-mar {
     margin-right: 0px !important;
   }
+}
+
+.btn-study-abroad {
+  font-family: "Roboto", sans-serif;
+  font-weight: 500;
+  font-size: 14px;
+  letter-spacing: 1px;
+  display: inline-block;
+  padding: 12px 32px;
+  border-radius: 50px;
+  transition: 0.5s;
+  line-height: 1;
+  margin: 10px;
+  color: #fff;
+  animation-delay: 0.8s;
+  background-color: #f24405;
+  border: 0px !important;
 }
