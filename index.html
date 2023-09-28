@@ -38,6 +38,15 @@
 
     <!-- Template Main CSS File -->
     <link href="assets/css/style.css" rel="stylesheet" />
+    <script type="text/javascript"
+        src="https://cdn.jsdelivr.net/npm/@emailjs/browser@3/dist/email.min.js">
+</script>
+<script src="assets/js/sendmail.js"></script>
+<script type="text/javascript">
+   (function(){
+      emailjs.init("wwbWqeYYAcj6G25U8");
+   })();
+</script>
 
     <!-- =======================================================
   * Template Name: Mantra Overseas
@@ -630,10 +639,8 @@
           <h2 class="section-title">Connect With Us</h2>
           <div style="align-items: center; text-align: center">
             <form
-              action="forms/contact.php"
-              method="post"
-              role="form"
               class="php-email-form"
+              name="php-email-form"
             >
               <div class="row">
                 <div class="col-md-6 form-group">
@@ -711,7 +718,7 @@
                 </div>
               </div>
               <div class="text-center">
-                <button type="submit">Send Message</button>
+                <button type="submit" onclick="sendMail()">Send Message</button>
               </div>
             </form>
           </div>
@@ -841,7 +848,6 @@
     <script src="assets/vendor/isotope-layout/isotope.pkgd.min.js"></script>
     <script src="assets/vendor/swiper/swiper-bundle.min.js"></script>
     <script src="assets/vendor/waypoints/noframework.waypoints.js"></script>
-    <script src="assets/vendor/php-email-form/validate.js"></script>
     <script>
       var interleaveOffset = 0.5;
 
@@ -886,6 +892,7 @@
 
       var swiper = new Swiper(".swiper-container", swiperOptions);
     </script>
+
 
     <!-- Template Main JS File -->
     <script src="assets/js/main.js"></script>
